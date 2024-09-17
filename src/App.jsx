@@ -9,16 +9,19 @@ import CardProducto from "./components/pages/product/CardProducto";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <>
-      <Menu></Menu>
-      {/* <Index></Index> */}
-      {/* <Administrador></Administrador> */}
-      <FormularioProducto></FormularioProducto>
-      <Footer></Footer>
-    </>
+   <BrowserRouter> 
+    <Routes>
+      <Route path="/" element={<Index></Index>}></Route>
+      <Route path="/administrador" element={<Administrador></Administrador>}></Route>
+      <Route path="/administrador/crear" element={<FormularioProducto></FormularioProducto>}></Route>
+      <Route path="/administrador/editar" element={<FormularioProducto></FormularioProducto>}></Route>
+      <Route path="*" element={<Error404></Error404>}></Route>
+    </Routes> 
+   </BrowserRouter>
   );
 }
 
