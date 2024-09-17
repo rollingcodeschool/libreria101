@@ -14,6 +14,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
    <BrowserRouter> 
+   <Menu></Menu>
     <Routes>
       <Route path="/" element={<Index></Index>}></Route>
       <Route path="/administrador" element={<Administrador></Administrador>}></Route>
@@ -21,6 +22,7 @@ function App() {
       <Route path="/administrador/editar" element={<FormularioProducto></FormularioProducto>}></Route>
       <Route path="*" element={<Error404></Error404>}></Route>
     </Routes> 
+    <Footer></Footer>
    </BrowserRouter>
   );
 }

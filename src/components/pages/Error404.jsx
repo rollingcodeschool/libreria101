@@ -1,12 +1,12 @@
 import { Button } from "react-bootstrap";
-
+import error from '../../assets/error.png'
 
 const Error404 = () => {
     return (
-        <div>
-            <h1>Error 404</h1>
+        <section className="text-center">
+            <img src={error} alt="Error 404" />
             <Button variant='warning'>Volver al inicio</Button>
-        </div>
+        </section>
     );
 };
 
