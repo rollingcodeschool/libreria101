@@ -29,6 +29,16 @@
       "descripcion_breve": "dfgdfg dlkdjfgkdjfgdfgk ",
       "descripcion_amplia": "dlkfgjdlfkg lldfgdfgdgfdfg dfgdfgdfggggdfgdfgddddddddddddddfg",
       "id": 125
+    },
+    {
+      "nombreProducto": "felpones",
+      "marca": "FaberCastell",
+      "precio": "1000",
+      "imagen": "https://images.pexels.com/photos/1672304/pexels-photo-1672304.jpeg",
+      "categoria": "Lapicera",
+      "descripcion_breve": "gerter lissssssssssssss kk",
+      "descripcion_amplia": "ddddddddddddddddddd ddddddddddddddddddddddddddddddd",
+      "id": 126
     }
   ]
 }
