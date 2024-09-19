@@ -9,6 +9,16 @@
       "descripcion_breve": "Lápices premium con pigmentos resistentes a la luz",
       "descripcion_amplia": "Los Faber-Castell Polychromos son lápices de colores profesionales con pigmentos de alta calidad y resistencia a la luz. Su textura cremosa garantiza trazos suaves y colores vibrantes, ideales para técnicas de capas y detalles precisos en el arte",
       "id": 123
+    },
+    {
+      "nombreProducto": "Lapices de colores",
+      "marca": "Maped",
+      "precio": "3000",
+      "imagen": "https://images.pexels.com/photos/1672304/pexels-photo-1672304.jpeg",
+      "categoria": "Lapicera",
+      "descripcion_breve": "kdfjgld fglkdfjgdlkfgjdlfkg ",
+      "descripcion_amplia": "dlkfgdjlfkgjd fffffffffffffffffffffffffffffffffffffffffhhhhh",
+      "id": 124
     }
   ]
 }
