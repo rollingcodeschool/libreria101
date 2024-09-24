@@ -1,7 +1,9 @@
 import { Form, Button } from "react-bootstrap";
 import { useForm } from "react-hook-form";
-import { crearProductoAPI } from "../../../helpers/queries";
+import { crearProductoAPI, obtenerProductoAPI } from "../../../helpers/queries";
 import Swal from "sweetalert2";
+import { useParams } from "react-router-dom";
+import { useEffect } from "react";
 
 const FormularioProducto = ({ titulo, estoyCreando }) => {
   const {
@@ -9,7 +11,33 @@ const FormularioProducto = ({ titulo, estoyCreando }) => {
     handleSubmit,
     formState: { errors },
     reset,
+    setValue
   } = useForm();
+
+  const {id} = useParams()
+ 
+
+  useEffect(()=>{
+    //si estoy editando el producto
+    if(!estoyCreando){
+      cargarProductoEnFormulario()
+    }
+  },[])
+
+  const cargarProductoEnFormulario = async()=>{
+    const respuesta = await obtenerProductoAPI(id);
+    if(respuesta.status === 200){
+      //rellenar mi formulario
+      const datoProducto = await respuesta.json()
+      setValue('nombreProducto', datoProducto.nombreProducto)
+      setValue('precio', datoProducto.precio)
+      setValue('marca', datoProducto.marca)
+      setValue('imagen', datoProducto.imagen)
+      setValue('categoria', datoProducto.categoria)
+      setValue('descripcion_breve', datoProducto.descripcion_breve)
+      setValue('descripcion_amplia', datoProducto.descripcion_amplia)
+    }
+  }
 
   const productoValidado = async (producto) => {
     if (estoyCreando) {

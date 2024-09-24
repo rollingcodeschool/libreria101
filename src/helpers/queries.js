@@ -27,3 +27,13 @@ try {
     return false;
 }
 }
+//GET que devuelve un producto
+export const obtenerProductoAPI = async(id)=>{
+try {
+    const respuesta = await fetch(URLProductos+'/'+id);
+    return respuesta;
+} catch (error) {
+    console.error(error)
+    return false;
+}
+}
