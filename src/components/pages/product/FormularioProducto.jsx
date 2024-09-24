@@ -2,7 +2,7 @@ import { Form, Button } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 import { crearProductoAPI, editarProductoAPI, obtenerProductoAPI } from "../../../helpers/queries";
 import Swal from "sweetalert2";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { useEffect } from "react";
 
 const FormularioProducto = ({ titulo, estoyCreando }) => {
@@ -15,6 +15,7 @@ const FormularioProducto = ({ titulo, estoyCreando }) => {
   } = useForm();
 
   const {id} = useParams()
+  const navegacion = useNavigate();
  
 
   useEffect(()=>{
@@ -67,6 +68,7 @@ const FormularioProducto = ({ titulo, estoyCreando }) => {
           icon: "success",
         });
         //redireccionar a la pagina del admin
+        navegacion('/administrador')
       }else{
         Swal.fire({
           title: "Ocurrio un error",
