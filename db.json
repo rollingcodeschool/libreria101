@@ -49,6 +49,16 @@
       "descripcion_breve": "Acuarelas de calidad artística",
       "descripcion_amplia": "Las acuarelas Winsor & Newton ofrecen una gama rica y vibrante de colores que se mezclan fácilmente, permitiendo crear hermosas transiciones y efectos. Su alta concentración de pigmento garantiza una excelente luminosidad y permanencia en el tiempo. Ideales para artistas profesionales y aficionados.",
       "id": 127
+    },
+    {
+      "nombreProducto": "Felpones Stabilo Point 88 x 20",
+      "marca": "\"Stabilo\",",
+      "precio": "3500",
+      "imagen": "https://images.pexels.com/photos/5412103/pexels-photo-5412103.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "categoria": "Escritura",
+      "descripcion_breve": "Marcadores de colores perfectos para la escritura.",
+      "descripcion_amplia": "Los Stabilo Point 88 son marcadores finos con tinta a base de agua que garantizan colores intensos y duraderos. Su punta de 0.4 mm es ideal para detalles precisos, escritura y dibujos. Son perfectos para el uso diario, trabajos escolares y proyectos creativos.",
+      "id": 128
     }
   ]
 }
