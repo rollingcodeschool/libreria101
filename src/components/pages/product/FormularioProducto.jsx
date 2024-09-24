@@ -127,9 +127,10 @@ const FormularioProducto = () => {
             })}
           >
             <option value="">Seleccione una opcion</option>
+            <option value="Arte">Arte</option>
             <option value="Cuadernos">Cuadernos</option>
-            <option value="Lapicera">Lapicera</option>
-            <option value="Resaltador">Resaltador</option>
+            <option value="Escritura">Escritura</option>
+            <option value="Hojas">Hojas</option>
           
           </Form.Select>
           <Form.Text className="text-danger">
@@ -185,7 +186,7 @@ const FormularioProducto = () => {
           </Form.Text>
         </Form.Group>
 
-        <Button type="submit" variant="success">
+        <Button type="submit" variant="primary">
           Guardar
         </Button>
       </Form>

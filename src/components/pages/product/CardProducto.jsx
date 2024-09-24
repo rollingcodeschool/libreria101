@@ -14,7 +14,7 @@ const CardProducto = () => {
             <span className="fw-bold">Precio: $350</span></Card.Text>
           </Card.Body>
           <Card.Footer className="text-end">
-          <Button className='btn btn-success me-2' to='/detalleProducto' >Ver más</Button>
+          <Button className='btn btn-primary me-2' to='/detalleProducto' >Ver más</Button>
         </Card.Footer>
         </Card>
       </Col>
