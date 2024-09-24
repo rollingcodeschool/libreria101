@@ -151,9 +151,9 @@ const FormularioProducto = () => {
                   "Debe ingresar como minimo 3 caracteres para la descripcion breve",
               },
               maxLength: {
-                value: 30,
+                value: 50,
                 message:
-                  "Debe ingresar como maximo 30 caracteres para la descripcion breve",
+                  "Debe ingresar como maximo 50 caracteres para la descripcion breve",
               },
             })}
           />

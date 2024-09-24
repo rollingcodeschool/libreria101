@@ -39,6 +39,16 @@
       "descripcion_breve": "gerter lissssssssssssss kk",
       "descripcion_amplia": "ddddddddddddddddddd ddddddddddddddddddddddddddddddd",
       "id": 126
+    },
+    {
+      "nombreProducto": "Acuarelas Winsor & Newton x 12",
+      "marca": "Winsor & Newton",
+      "precio": "50000",
+      "imagen": "https://images.pexels.com/photos/6487216/pexels-photo-6487216.jpeg",
+      "categoria": "Arte",
+      "descripcion_breve": "Acuarelas de calidad artística",
+      "descripcion_amplia": "Las acuarelas Winsor & Newton ofrecen una gama rica y vibrante de colores que se mezclan fácilmente, permitiendo crear hermosas transiciones y efectos. Su alta concentración de pigmento garantiza una excelente luminosidad y permanencia en el tiempo. Ideales para artistas profesionales y aficionados.",
+      "id": 127
     }
   ]
 }
