@@ -66,3 +66,21 @@ export const borrarProductoAPI = async(id)=>{
         return false;
     }
 }
+
+//cuando tengamos el backend con un login enviar solicitud POST
+const userAdmin = {
+    email: "admin@libreria101.com",
+    password: "123Aa123",
+  };
+  
+  export const login = (usuario) => {
+    if (
+      usuario.email === userAdmin.email &&
+      usuario.password === userAdmin.password
+    ) {
+      sessionStorage.setItem("libreria101", JSON.stringify(usuario.email));
+      return true;
+    } else {
+      return false;
+    }
+  };
