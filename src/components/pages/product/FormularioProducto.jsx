@@ -1,6 +1,6 @@
 import { Form, Button } from "react-bootstrap";
 import { useForm } from "react-hook-form";
-import { crearProductoAPI, obtenerProductoAPI } from "../../../helpers/queries";
+import { crearProductoAPI, editarProductoAPI, obtenerProductoAPI } from "../../../helpers/queries";
 import Swal from "sweetalert2";
 import { useParams } from "react-router-dom";
 import { useEffect } from "react";
@@ -58,7 +58,22 @@ const FormularioProducto = ({ titulo, estoyCreando }) => {
         });
       }
     } else {
-      console.log("aqui tengo que editar el producto");
+      //solicitar a la api editar el producto
+      const respuesta = await editarProductoAPI(producto, id)
+      if(respuesta.status === 200){
+        Swal.fire({
+          title: "Producto editado",
+          text: `El producto ${producto.nombreProducto}, fue editado correctamente`,
+          icon: "success",
+        });
+        //redireccionar a la pagina del admin
+      }else{
+        Swal.fire({
+          title: "Ocurrio un error",
+          text: `El producto ${producto.nombreProducto} no pudo ser editado, intente esta operación en unos minutos.`,
+          icon: "error",
+        });
+      }
     }
   };
 

@@ -37,3 +37,20 @@ try {
     return false;
 }
 }
+
+//PUT o PATCH
+export const editarProductoAPI = async(productoEditado, id)=>{
+    try {
+        const respuesta = await fetch(URLProductos+'/'+id,{
+            method: "PUT",
+            headers: {
+                "Content-Type":"application/json"
+            },
+            body: JSON.stringify(productoEditado)
+        })
+        return respuesta
+    } catch (error) {
+        console.error(error)
+        return false;
+    }
+}
