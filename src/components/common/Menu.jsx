@@ -10,7 +10,7 @@ const Menu = ({usuarioLogueado, setUsuarioLogueado}) => {
     //quitar el usuario del sessionStorage
     sessionStorage.removeItem("libreria101");
     //resetear el state
-    setUsuarioLogueado("");
+    setUsuarioLogueado({});
     //redireccionar al inicio
     navegacion("/");
   };
@@ -26,7 +26,7 @@ const Menu = ({usuarioLogueado, setUsuarioLogueado}) => {
           <Nav className="ms-auto">
             <NavLink end to='/' className='nav-link'>Inicio</NavLink>
             {
-              usuarioLogueado !== ""?(
+              usuarioLogueado.email?(
                 <>
                 <NavLink end to='/administrador' className='nav-link'>Administrador</NavLink>
                 <Button variant="link" onClick={logout}>Logout</Button>
